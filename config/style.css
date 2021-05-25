@@ -1,0 +1,24 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+a:link, a:active, a:visited{
+    color:black;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin:20px;
+}
+
+.syunin{
+    position: fixed;
+    bottom:0;
+
+}
