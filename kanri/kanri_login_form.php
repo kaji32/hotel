@@ -10,8 +10,8 @@ require_once('../config/config.php');
 ?>
 
 <form action="kanri_login_check.php" method="post">
-<input type="text" name="syuninId"><br>
-<input type="password" name="syuninPassword"><br>
+<input type="text" name="id"><br>
+<input type="password" name="pass"><br>
 <input type="hidden" name="token" value="<?php echo h(setToken()); ?>">
 <input type="submit" value="ログイン">
 </form>
