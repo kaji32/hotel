@@ -7,8 +7,8 @@ if(isset($_SESSION['login_syunin'])){
     exit();
 }
 
-$postId = h($_POST['syuninId']);
-$postPassword = h($_POST['syuninPassword']);
+$postId = h($_POST['id']);
+$postPassword = h($_POST['pass']);
 
 
 $token = h($_POST['token']);
@@ -24,8 +24,8 @@ if(empty($token)||empty($_SESSION['token'])||$token!=$_SESSION['token']){
 }
 unset($_SESSION['token']);
 
-$syuninId = 'syunin';
-$password = 'kofu';
+$syuninId = '****';
+$password = '****';
 
 if(empty($postId)||empty($postPassword)||$postId!=$syuninId||$password!=$postPassword){
     print'ログインに失敗しました。';
